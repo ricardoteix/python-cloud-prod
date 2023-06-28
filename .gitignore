@@ -1,1 +1,7 @@
+__pycache__
 env/
+
+documentos/*.pptx
+documentos/*.potx
+documentos/*.png
+documentos/*.svg
