@@ -1,0 +1,19 @@
+service: aws-python-project
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.10
+
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:GetObject
+        - s3:PutObject
+      Resource:
+        - arn:aws:s3:::ct-cloud-prod-exemplo-s3-demo2
+
+functions:
+  lambda_handler:
+    handler: handler.lambda_handler

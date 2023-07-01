@@ -1,0 +1,11 @@
+service: gerador-certificado
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.10
+
+functions:
+  hello:
+    handler: handler.hello
