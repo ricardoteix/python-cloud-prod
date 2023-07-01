@@ -6,3 +6,4 @@ nova.save("dia2/novo_exemplo1.jpg")
 
 print(image.size)
 print(nova.size)
+
